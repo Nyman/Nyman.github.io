@@ -1,12 +1,11 @@
 /* style.css */
 
-/* Set the background color to black for the entire page */
 body {
     background-color: black;
-    color: white; /* Set text color to white */
+    color: white;
   }
   
-  /* Increase the font size of <p> elements to 18px */
   p {
-    font-size: 18px;
+    font-size: 23px;
+    padding-left: 10px;
   }
