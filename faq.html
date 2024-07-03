@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #message {
+                display: none;
+                margin-top: 20px;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Freaquently Asked Questions</h2>
+
+        <faq-question>"This page is not fun."</faq-question></br>
+        <faq-answer>Fun available at shows.</faq-answer></br></br>
+
+        <faq-question>"This page offends me visually."</faq-question></br>
+        <faq-answer>Thank you. I put all my laziness to work.</faq-answer></br></br>
+
+        <faq-question>"Is there more functionality coming to jarkkonyman.fun?"</faq-question></br>
+        <faq-answer>Yes. More Crypto-AI-Blogchain-Assembly coming live tomorrow. Be sure to check back soon!</faq-answer></br></br>
+
+        <faq-question>"There's no navigation bar on this page."</faq-question></br>
+        <faq-answer>I'm lazy. Use the back button. </faq-answer></br></br>
+        
+        <button id="myButton">Back</button>
+        <p id="message">Yeah... it's not gonna work. Sorry.</p>
+    
+        <script>
+            let clickCount = 0;
+            const button = document.getElementById('myButton');
+            const clearButton = document.getElementById('clearButton');
+            const message = document.getElementById('message');
+    
+            button.addEventListener('click', () => {
+                clickCount++;
+                if (clickCount === 3) {
+                    message.style.display = 'block';
+                    clearButton.style.display = 'inline'; // Show the clear button
+                }
+            });
+    
+            clearButton.addEventListener('click', () => {
+                clickCount = 0;
+                message.style.display = 'none';
+                clearButton.style.display = 'none'; // Hide the clear button
+            });
+        </script>
+
+    </body>
+</html>
+
