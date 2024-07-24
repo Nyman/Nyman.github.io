@@ -7,8 +7,14 @@
         <style>
             #message {
                 display: none;
-                margin-top: 25px;
+                margin-top: 32px;
                 color: rgb(6, 165, 49);
+            }
+            #message2 {
+                display: none;
+                font-size: 420;
+                margin-top: 2px;
+                color: rgb(203, 43, 163);
             }
         </style>
     </head>
@@ -20,21 +26,24 @@
 
         <faq-question>"This page offends me visually."</faq-question></br>
         <faq-answer>Thank you. I put all my laziness to work.</faq-answer></br></br>
+        <faq-answer>Page was optimized for Web 1.14b and 3440*1440 resolution.</faq-answer>
 
         <faq-question>"Is there more functionality coming to jarkkonyman.fun?"</faq-question></br>
-        <faq-answer>Yes. More Crypto-AI-Blogchain-Assembly coming live tomorrow. Be sure to check back soon!</faq-answer></br></br>
+        <faq-answer>Yes. More Crypto-AI-Blogchain-Assembly coming live soon. Be sure to check back tomorrow!</faq-answer></br></br>
 
         <faq-question>"There's no navigation bar on this page."</faq-question></br>
         <faq-answer>I'm lazy. Use the back button. </faq-answer></br></br>
         
         <button id="myButton">Back</button>
         <p id="message">Yeah... it's not gonna work. Sorry.</p>
+        <p id="message2">Keep on trying!</p>
     
         <script>
             let clickCount = 0;
             const button = document.getElementById('myButton');
             const clearButton = document.getElementById('clearButton');
             const message = document.getElementById('message');
+            const message2 = document.getElementById('message2');
     
             button.addEventListener('click', () => {
                 clickCount++;
@@ -42,11 +51,16 @@
                     message.style.display = 'block';
                     clearButton.style.display = 'inline'; // Show the clear button
                 }
+                else if (clickCount === 5) {
+                    message2.style.display = 'block';
+                    clearButton.style.display = 'inline'; // Show the clear button
+                }
             });
     
             clearButton.addEventListener('click', () => {
                 clickCount = 0;
                 message.style.display = 'none';
+                message2.style.display = 'none';
                 clearButton.style.display = 'none'; // Hide the clear button
             });
         </script>
