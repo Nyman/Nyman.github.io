@@ -16,6 +16,12 @@
                 margin-top: 2px;
                 color: rgb(203, 43, 163);
             }
+            #message3 {
+                display: none;
+                font-size: 42;
+                margin-top: 2px;
+                color: rgb(42, 85, 122);
+            }
         </style>
     </head>
     <body>
@@ -36,6 +42,7 @@
         <button id="myButton">Back</button>
         <p id="message">Yeah... it's not gonna work. Sorry.</p>
         <p id="message2">Keep on trying!</p>
+        <p id="message3">Ok. You won. Contact me for prize.</p>
     
         <script>
             let clickCount = 0;
@@ -43,6 +50,7 @@
             const clearButton = document.getElementById('clearButton');
             const message = document.getElementById('message');
             const message2 = document.getElementById('message2');
+            const message3 = document.getElementById('message3');
     
             button.addEventListener('click', () => {
                 clickCount++;
@@ -54,12 +62,17 @@
                     message2.style.display = 'block';
                     clearButton.style.display = 'inline'; // Show the clear button
                 }
+                else if (clickCount === 12) {
+                    message3.style.display = 'block';
+                    clearButton.style.display = 'inline'; // Show the clear button
+                }
             });
     
             clearButton.addEventListener('click', () => {
                 clickCount = 0;
                 message.style.display = 'none';
                 message2.style.display = 'none';
+                message3.style.display = 'none';
                 clearButton.style.display = 'none'; // Hide the clear button
             });
         </script>
