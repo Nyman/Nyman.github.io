@@ -1,9 +1,12 @@
 /* style.css */
 
-body {
+  body {
     background-color: black;
-    color: white;
+    color: white; 
+    padding: 10px; /* Adjust padding to your preference */
+    overflow-x: hidden; /* Prevent horizontal overflow */
   }
+
   h1 {
     font-size: 30;
     padding-left: 10px;
@@ -21,7 +24,7 @@ body {
   h33 {
     font-size: 9;
     padding-left: 2px;
-    color:rgb(216, 207, 182)
+    color:rgb(216, 207, 182);
   }
   p {
     font-size: 20px;
@@ -30,12 +33,12 @@ body {
   pre {
     font-size: 20px;
     padding-left: 10px;
-    color:#009800
+    color:#009800;
   }
   a {
     font-size: 23px;
     padding-left: 30px;
-    color: violet
+    color: violet;
   }
 
   .navbar {
@@ -43,7 +46,6 @@ body {
     justify-content: space-around;
     align-items: left;
     width: 600px;
-    
     padding: 10px;
   }
 
@@ -67,14 +69,34 @@ body {
   faq-question {
     font-size: 20px;
     padding-left: 30px;
-    color: red 
+    color: red;
   }
   faq-answer {
     font-size: 20px;
     padding-left: 45px;
-    color:yellowgreen 
+    color:yellowgreen; 
   }
   img-liked {
           width: 40%;
           height: auto; /* Maintain aspect ratio */
   }
+
+  .links-container {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  }
+  
+  .links-container a {
+    display: inline-block; /* Keeps the links inline with each other */
+    margin-right: 10px; /* Adds space between the links */
+    padding: 10px; /* Adjust padding for better touch targets on mobile */
+    color: violet;
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Optional: Rounded corners */
+    white-space: nowrap; /* Ensures individual links don't wrap */
+  }
+  
+  .links-container a:last-child {
+    margin-right: 0; /* Removes the margin from the last link */
+  }
+  
