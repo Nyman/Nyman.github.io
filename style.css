@@ -42,15 +42,22 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: left;
-    background-color: #333;
+    width: 600px;
+    
     padding: 10px;
   }
 
   .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
+    flex: none; /* Prevents the link from growing */
+    width: 150px; /* Set a fixed width for each link */
+    text-align: center; /* Centers the text inside the link */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from the links */
+    padding: 10px; /* Adds padding around the text */
+    background-color: #444; /* Background color of the links */
+    border-radius: 4px; /* Optional: Rounds the corners of the links */
+    margin: 0 5px; /* Adds some space between the links */
+    transition: background-color 0.3s; /* Adds a smooth transition for background color changes */
   }
 
   .navbar a:hover {
