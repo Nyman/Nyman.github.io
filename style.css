@@ -45,13 +45,13 @@
     display: flex;
     justify-content: space-around;
     align-items: left;
-    width: 600px;
+    width: 500px;
     padding: 10px;
   }
 
   .navbar a {
     flex: none; /* Prevents the link from growing */
-    width: 150px; /* Set a fixed width for each link */
+    width: 90px; /* Set a fixed width for each link */
     text-align: center; /* Centers the text inside the link */
     color: white; /* Text color */
     text-decoration: none; /* Removes underline from the links */
@@ -83,7 +83,7 @@
 
   .links-container {
     white-space: nowrap; /* Prevents wrapping */
-    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+    overflow-x: visible; /* Allows horizontal scrolling if necessary */
   }
   
   .links-container a {
