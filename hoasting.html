@@ -1,0 +1,45 @@
+<h3></h3>
+tl;dr
+
+Vaihda Squarespaceen.
+Tai jos haluaa käyttää Wordpressia, niin esim. Pressable.
+
+<h3></h3>
+Enemmän rautalankaa ja huomioitavaa
+
+<h4>Hostaus ja Uptime</h4>
+
+Mitä varmemmaksi ja viansietokykyisemmäksi järjestelmän haluaa, sitä enemmän siihen pitää laittaa resursseja.
+Hyvänä esimerkkinä kun IshowSpeed kävi Suomessa, <a href="https://www.hs.fi/talous/art-2000011365661.html">Hesburgerin sivut kaatuivat</a>  
+kun tuubiaivot vyöryivät katsomaan mistä burgerista hän puhui. 
+
+On helppoa luoda palvelu joka toimii 98% ajasta, hieman lisää huomiota tarvitaan jos halutaan 99% varmuus ja todella paljon lisää jos tavoite on >99,95%
+Ei ole yksiselitteistä vastausta, on vain matriisi valintoja joita saa avattua rahalla.
+
+Nopealla WHOIS-vilkaisulla veikkaisin, että nykyinen palveluntarjooja on Louhi. Tapausta tarkemmin tuntematta voisin veikata, 
+että kyseessä on joku yksittäinen palvelin josta on virtualisoitu joku osuus jossa nettisivut pyörivät. Tällainen ratkaisu on sinänsä ihan toimiva,
+mutta tilanne jossa sivutolle suuntautuu abnormaali määrä liikennettä, ei se todennäköisesti pysty handlaamaan kuormaa ja kaatuu. 
+Ja sitten tulee tylsää virheviestiä näytölle ja kaikille paha mieli. 
+
+Todennäköisesti toimintavarman sivuston saa ottamalla sen suuremmalta palveluntarjoojalta. 
+Taholta jonka palvelu skaalaa automaattisesti tarpeen mukaan. Tässäkin tilanteessa pitää vähän perehtyä mitä palveluntarjooja 
+lupaa palvelukuvauksessaan, minkälaiseen määrän pystyvät skaalaamaan, tuleeko lisää kuluja jos sivuston liikenne yhtäkkiä räjähtää
+10 000x suuremmaksi. jne. 
+
+
+<h4>Sivujen sisältö</h4>
+Nykyiset sivut eivät ole kovin suuret, lataavat n. 2MB tietoa kun menee etusivulle. Valokuvat ja fontit näyttävät vievän suurimman osuuden kaistasta.
+
+Jos tätä vertaa esim. hs.fi, niin se ensin lataa n. 8MB tietoa joka alas skrollatessa kasvaa kymmeniin tai muutamaan sataan megaan. 
+
+Toisena äärimerkkinä jarkkonyman.fun jonka etusivu vie n. 0,04MB, eli on 50x pienempi.
+
+<h4>Julkaisualusta</h4>
+Miten sisältö saadaan näytettäväksi ja kenen sitä pitää osata käyttää?
+
+Jos käytössä on jokin julkaisualusta, kuten Wordpress, tulee palveluntarjoojan tukea sitä.
+Myös käytössä oleva versio saattaa vaikuttaa, onko sivut tehty esim. vanhemmalle versiolle Wordpressiä, jolloin niiden siirtäminen saattaa vaatia enemmän työtä
+kuin vain noston uudelle palveluntarjoojalle. Todennäköisesti kuitenkin helppo homma vaihtaa. 
+
+Raakaa HTML:ää tekemällä tätä ongelmaa ei ole, mutta ylläpito ja päivitys vaativat jo enemmän tietotaitoa. Ei mahdottoman paljon, mutta varsinkin ongelmatilanteiden 
+ratkaisu voi olla maalikolle ongelmallista. 
